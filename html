@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="calculator" role="application" aria-label="Simple calculator">
+    <div class="display-wrapper">
+      <div id="expression" class="expression" aria-live="polite"></div>
+      <input id="display" class="display" type="text" inputmode="decimal" aria-label="Calculator display" readonly />
+    </div>
+
+    <div class="buttons" role="group" aria-label="Calculator buttons">
+      <!-- Row 1 -->
+      <button class="btn control" data-action="clear" aria-label="clear">C</button>
+      <button class="btn control" data-action="delete" aria-label="delete">DEL</button>
+      <button class="btn operator" data-value="(" aria-label="open parenthesis">(</button>
+      <button class="btn operator" data-value=")" aria-label="close parenthesis">)</button>
+
+      <!-- Row 2 -->
+      <button class="btn number" data-value="7">7</button>
+      <button class="btn number" data-value="8">8</button>
+      <button class="btn number" data-value="9">9</button>
+      <button class="btn operator" data-value="/" aria-label="divide">÷</button>
+
+      <!-- Row 3 -->
+      <button class="btn number" data-value="4">4</button>
+      <button class="btn number" data-value="5">5</button>
+      <button class="btn number" data-value="6">6</button>
+      <button class="btn operator" data-value="*" aria-label="multiply">×</button>
+
+      <!-- Row 4 -->
+      <button class="btn number" data-value="1">1</button>
+      <button class="btn number" data-value="2">2</button>
+      <button class="btn number" data-value="3">3</button>
+      <button class="btn operator" data-value="-" aria-label="subtract">−</button>
+
+      <!-- Row 5 -->
+      <button class="btn number" data-value="0">0</button>
+      <button class="btn number" data-value=".">.</button>
+      <button class="btn equal" data-action="equals" aria-label="equals">=</button>
+      <button class="btn operator" data-value="+" aria-label="add">+</button>
+    </div>
+
+    <p class="hint">Tip: You can use it anytime.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
